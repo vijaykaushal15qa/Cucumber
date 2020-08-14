@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Search and Validate",
+        "description": "",
+        "id": "search-functionality-validation;search-and-validate",
+        "after": [
+          {
+            "result": {
+              "duration": 109646700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWebValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11889831000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Green Cart Landing Page",
+            "match": {
+              "location": "MyStepDefinitions.user_is_on_green_cart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2365806000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User searched for Cucumber vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 18
+                }
+              ],
+              "location": "MyStepDefinitions.user_searched_for_vegetable(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38775000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"Cucumber\" results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "MyStepDefinitions.something_results_are_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality Validation",
+    "description": "",
+    "id": "search-functionality-validation",
+    "keyword": "Feature",
+    "uri": "search.feature"
+  }
+]
