@@ -12,6 +12,8 @@ public void afterValidation()
 {
 driver.close();
 System.out.println("Git Test Commit By User2");
+System.out.println("Git Test Commit By User1");
+
 }
 
 
