@@ -7,10 +7,11 @@ import cucumber.api.java.Before;
 public class Hooks extends Base{
 	
 
-@After("@SanityyTest")
+@After("@SanityTest")
 public void afterValidation()
 {
 driver.close();
+System.out.println("Git Test Commit By User2");
 }
 
 
